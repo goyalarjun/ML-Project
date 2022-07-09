@@ -29,7 +29,7 @@ def upload_file():
     if request.method == 'POST':
         select = request.form.get('dropdown')
         f = request.files['file']
-        f.save(secure_filename(f.filename))
+        #f.save(secure_filename(f.filename))
         print(f.filename)
         if select == 'classification' and f.filename == 'adult.data':
             os.system('python ArjunMLAssignment-2.py')
