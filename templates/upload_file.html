@@ -1,0 +1,23 @@
+<!Doctype Html>
+<html>
+   <body>
+
+      <form action = "/uploader" method = "POST"
+         enctype = "multipart/form-data">
+         <div class="row" style="margin: 10px;">
+  <div class="form-group row">
+    <div class="col-md-3">
+      <label for="dropdown">Type of Analysis:</label>
+        <select class="form-control" name="dropdown" id="dropdown" >
+            <option value="blank"></option>
+            <option value="classification">Classification</option>
+            <option value="regression">Regression</option>
+        </select>
+    </div>
+  </div>
+</div>
+         <input type = "file" name = "file" />
+         <input type = "submit"/>
+      </form>
+   </body>
+</html>
