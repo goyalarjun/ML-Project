@@ -37,7 +37,7 @@ def upload_file():
             return render_template("output.html", user_image=img)
 
         elif select == 'regression' and f.filename == 'housing.csv':
-            os.system('python ArjunMLAssignment-1.py')
+            #os.system('python ArjunMLAssignment-1.py')
             img = url_for('static', filename="regression.png")
             return render_template("output.html", user_image=img)
 
