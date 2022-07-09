@@ -44,5 +44,5 @@ def upload_file():
         else:
             return 'Please select type of analysis as regression with housing.csv or classification with adult.data!!'
 
-
-app.run(port=4455,debug=True)
+if __name__ == '__main__':
+    app.run(port=4455, debug=True)
