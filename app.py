@@ -32,7 +32,7 @@ def upload_file():
         #f.save(secure_filename(f.filename))
         print(f.filename)
         if select == 'classification' and f.filename == 'adult.data':
-            os.system('python ArjunMLAssignment-2.py')
+            #os.system('python ArjunMLAssignment-2.py')
             img = url_for('static', filename="classification.png")
             return render_template("output.html", user_image=img)
 
