@@ -3,7 +3,7 @@ from werkzeug.utils import secure_filename
 import os
 
 app = Flask(__name__)
-app.run(port=8080)
+
 
 # app.config['static']
 
@@ -45,4 +45,4 @@ def upload_file():
             return 'Please select type of analysis as regression with housing.csv or classification with adult.data!!'
 
 
-app.run()
+app.run(port=8080)
