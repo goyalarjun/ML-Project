@@ -45,4 +45,4 @@ def upload_file():
             return 'Please select type of analysis as regression with housing.csv or classification with adult.data!!'
 
 
-app.run(debug=True, port=33507)
+app.run(host='127.0.0.9',port=4455,debug=True)
