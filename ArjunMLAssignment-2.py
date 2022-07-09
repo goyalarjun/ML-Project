@@ -22,7 +22,7 @@ from lightgbm import LGBMClassifier
 
 colnames= ['Age','workclass','fnlwgt','education','education-num','marital-status','occupation',
            'relationship','race','sex','capital-gain','capital-loss','hours-per-week','native-country','salary']
-data = pd.read_csv('adult.data', sep=",", header=None, names=colnames)
+data = pd.read_csv(r'static/adult.data', sep=",", header=None, names=colnames)
 
 
 
